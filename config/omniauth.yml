@@ -1,0 +1,10 @@
+production: &production
+  google:
+    key: XXXXX
+    secret: XXXXX
+
+development: &development
+  <<: *production
+
+test:
+  <<: *development
